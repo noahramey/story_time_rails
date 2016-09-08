@@ -1,10 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-
-
 body {
+
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+section {
   margin: 0 auto;
   max-width: 50em;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   padding: 4em 1em;
   h1, h3 {
@@ -16,4 +18,16 @@ body {
   a {
     color: #e81c4f;
   }
+}
+
+header {
+  background-image: url("header-image.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 15vw 2em;
+  text-align: center;
+  max-width: 100vw;
+  color: white;
 }
