@@ -1,0 +1,13 @@
+<h1><%= @story.name %></h1>
+
+<% if @story.sentences.any? %>
+<p>
+  <% @story.sentences.each do |sentence| %>
+    <%= sentence.content %>
+  <% end %>
+</p>
+<% else %>
+  <h4>This story is bullshit.</h4>
+<% end %>
+
+<p><%= link_to "Write a sentence", new_story_sentence_path(@story, @sentence) %></p>

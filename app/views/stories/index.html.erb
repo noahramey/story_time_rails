@@ -1,0 +1,11 @@
+<h1>All Stories</h1>
+
+<% if @stories.any? %>
+  <% @stories.each do |story| %>
+    <h3><%= link_to story.name, story_path(story) %></h3>
+  <% end %>
+<% else %>
+  <h3>There are no stories.</h3>
+<% end %>
+
+<h3><%= link_to "New Story", new_story_path%></h3>
