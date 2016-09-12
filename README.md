@@ -1,24 +1,35 @@
-# README
+# Story Time (Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app was made to practice using Ruby on Rails. It allows users to create stories and have randomly generated images to inspire sentences for said stories. It is a random story generating application.
 
-Things you may want to cover:
+### Installation
 
-* Ruby version
+Open Terminal and clone the repository.  
+```
+$ cd Desktop
+$ git clone https://github.com/noahramey/story_time_rails.git
+```
 
-* System dependencies
+Navigate to the repository and bundle Ruby gems:
+```
+$ cd story_time_rails
+$ bundle install
+```
 
-* Configuration
+Make sure Postgres is running on your local machine, then setup the database:
+```
+$ rails db:setup db:test:prepare
+```
 
-* Database creation
+Start the Rails server.
+```
+$ rails s
+```
 
-* Database initialization
+Open your browser and navigate to `localhost:3000`.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+License
+-------
 
-* Deployment instructions
-
-* ...
+MIT License. Copyright &copy; 2016 "Noah Ramey"
